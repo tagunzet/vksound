@@ -7,18 +7,11 @@ import collections
 import requests,vk_audio
 import lxml
 
-                #albums = vkaudio.get(owner_id=31309714)[0]
-                #print(albums)
-                #for audio in vkaudio.get(owner_id=73031829):
-                #    print(audio['artist'] ,audio['title'] , audio['url']  )
-                #    #3:20 ОН ОБРАБАТЫВАЕТ 1100 ЗАПИСЕЙ
-
 from flask import Flask,render_template,request, url_for,redirect , session
 app = Flask(__name__)
 app.secret_key = b'_5#y2L"F4Q8z\n\xec]/'
 mass = []
 code_auth = []
-
 
 @app.route('/auth/' , methods=["GET", "POST"])
 def auth_handler():
@@ -31,8 +24,6 @@ def auth_handler():
     return key, remember_device
 
 
-
-
 @app.route('/')
 def hello_world():
     if 'username' in session:
@@ -40,21 +31,6 @@ def hello_world():
     else:
         return render_template("login.html")
 
-
-
-
-# @app.route('/code', methods=["GET", "POST"])
-# def codeinput2():
-#     if request.method == 'POST':
-#         codes = request.form.get('code')
-#         print(codes)
-#         code_auth.append(codes)
-#         key = codes
-#         remember_device = False
-#
-#         return key,remember_device
-#
-#     return render_template("dvufaktorka.html")
 
 users_id = []
 access_tokens = []
@@ -93,9 +69,6 @@ def login():
         except vk_api.AuthError as error_msg:
             print(error_msg)
             return
-
-            #return redirect(url_for('codeinput2'))
-
 
         import vk_audio
         one_comm = (vk_session.token['user_id'])
@@ -145,4 +118,4 @@ def exiting():
 
 
 if __name__ == '__main__':
-    app.run(host='194.67.111.86' , port = 80)
+    app.run(host='тут пишите свой ip' , port = тут порт)
