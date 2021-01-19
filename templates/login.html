@@ -5,7 +5,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<title>Login Page</title>
+	<title>Войти в профиль</title>
    <!--Made with love by Mutiullah Samim -->
    
 	<!--Bootsrap 4 CDN-->
@@ -16,60 +16,110 @@
 
 	<!--Custom styles-->
 	<link rel="stylesheet" type="text/css" href="/static/style.css">
+	
+	<script data-ad-client="ca-pub-2112655995559725" async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+
+	
+	
+	
+	
 </head>
 
 
 
+
+
+
 <body>
+
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+  <a class="navbar-brand" href="#">vksound.ru</a>
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+  <div class="collapse navbar-collapse" id="navbarNav">
+    <ul class="navbar-nav">
+      <li class="nav-item ">
+        <a class="nav-link disabled" href="#">Created by Sergey Tugunov</a>
+      </li>
+		</li>
+        <li class="nav-item">
+        <a class="nav-link" href="/">Главная</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="/help">Помощь</a>
+      </li>
+	  <li class="nav-item">
+        <a class="nav-link" href="/update">Обновления</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="/about">О нас</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link " href="/nahleb">Пожертвовать</a>
+      </li>
+    </ul>
+  </div>
+</nav>
+
+
+
+
+
+
+
+
 <div class="container">
 	<div class="d-flex justify-content-center h-100">
 		<div class="card">
 			<div class="card-header">
-				<h3>Sign In</h3>
+				<h3>Войти</h3>
 				<div class="d-flex justify-content-end social_icon">
-					<span><i class="fab fa-facebook-square"></i></span>
-					<span><i class="fab fa-google-plus-square"></i></span>
-					<span><i class="fab fa-twitter-square"></i></span>
+					<span><i class="fab fa-vk" href ="https://github.com/tagunzet/vksound"></i></span>
+					<span>
+						<i class="fab fa-github" href ="https://github.com/tagunzet/vksound"></i>
+					</span>
+
 				</div>
 			</div>
 			<div class="card-body">
 				<form action="/login/" method="POST">
-				<div class="input-group form-group">
-						<div class="input-group-prepend">
-							<span class="input-group-text"><i class="fas fa-user"></i></span>
-						</div>
-						<input name="username" placeholder="Логин">
-						
-					</div>
-					
-				
-					<div class="input-group form-group">
-						<div class="input-group-prepend">
-							<span class="input-group-text"><i class="fas fa-user"></i></span>
-						</div>
-						<input type="password" name="password" placeholder="Пароль">
-						
-					</div>
+<!--				<div class="input-group form-group">-->
+<!--						<div class="input-group-prepend">-->
+<!--							<span class="input-group-text"><i class="fas fa-user"></i></span>-->
+<!--						</div>-->
+<!--						<input name="username" placeholder="Логин">-->
+<!--						-->
+<!--					</div>-->
+<!--					-->
+<!--				-->
+<!--					<div class="input-group form-group">-->
+<!--						<div class="input-group-prepend">-->
+<!--							<span class="input-group-text"><i class="fas fa-user"></i></span>-->
+<!--						</div>-->
+<!--						<input type="password" name="password" placeholder="Пароль">-->
+<!--						-->
+<!--					</div>-->
 					<div class="input-group form-group">
 						<div class="input-group-prepend">
 							<span class="input-group-text"><i class="fas fa-key"></i></span>
 						</div>
-						 <input name="code" placeholder="Свой ID">
+						 <input name="code" placeholder="ID страницы с аудио">
 					</div>
 					<div class="row align-items-center remember">
-						<input type="checkbox">Remember Me
+						<input type="checkbox">Запомнить меня
 					</div>
 					<div class="form-group">
-						<input type="submit" value="Login" class="btn float-right login_btn">
+						<input type="submit" value="Войти" class="btn float-right login_btn">
 					</div>
 				</form>
 			</div>
 			<div class="card-footer">
 				<div class="d-flex justify-content-center links">
-					Don't have an account?<a href="#">Sign Up</a>
+					Аудиозаписи должны быть открыты! 
 				</div>
-				<div class="d-flex justify-content-center">
-					<a href="#">Forgot your password?</a>
+				<div class="d-flex justify-content-center links">
+					Мы не храним ваши данные и сессии. 
 				</div>
 			</div>
 		</div>
